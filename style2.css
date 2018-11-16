@@ -1,0 +1,178 @@
+*{
+	               margin: 0;
+	               box-sizing: border-box;
+               }
+			body{
+				overflow: hidden;
+			}
+
+			/**/
+			
+			.wrapper{
+				width: 100%;
+				height: 100vh;
+				padding: 0px 5% ;
+				box-sizing: border-box;
+				background-image: ;
+				background-repeat: no-repeat;
+				background-size: cover;
+				z-index: ;position: absolute;
+				display: flex;
+				justify-content: space-between;
+				opacity: ;
+				/*border-bottom: 5px solid rgb(116,218,159);*/
+			}
+			
+			
+			/* the catchy sentence */
+			.speech{
+				width: 30%;
+				height: 15em;
+				margin-top: 22%;
+				color: #FE7860;/*1*/
+				color: white;
+				padding-bottom: 1em;
+				border-bottom: 5px solid rgb(116,218,159);
+			}
+			.speech p{
+				font-size: 130%;
+			}
+			.speech h1{
+				margin-bottom: 8%;
+				font-size: 600%;
+				color: #FE7860;
+			}
+			.logo1{
+				width: 10%;
+				height: 10.8em;
+				margin-left: 5%;
+				padding-top: 4%;
+				z-index: 1000;
+				position: absolute;
+				background-color:rgb(116,218,159) ;
+				background-color: #FFFFFF;
+				background-color: #FE7860;
+				background-color: rgba(116,218,159,1);
+				background-color: mediumseagreen;
+			}
+			#logo1-bottom{
+				height: 30em;
+				margin-top: 40em;
+			}
+			.logo{
+				width: 30%;
+				height: 50vh;
+				position: absolute;
+			}
+			.options{
+				width: 30%;
+				height: auto;
+				font-size: 160%;
+				text-align: right;
+				margin-top: 20%;
+				padding-right: ;
+				/*background-color: rgba(0,0,0,0.5);*/
+				font-family: 'Alice';
+				font-family: 'Encode Sans Expanded', sans-serif
+			}
+			.options a{
+				text-decoration: none;
+				line-height: 200%;
+				color:white ;
+				opacity:1 ;
+				
+			}
+			.options a:hover{
+				color: #FF5000;
+				color: #FFCD24;
+				color: #FE7860;/*1 dominant */
+				opacity: 1;
+			}
+			.fa-minus{
+				font-size: 40%;
+				color: #FE7860;
+				font-weight: 100;
+			}
+			
+			.img-container{
+				width: 100%;
+				height: 100vh;
+				position: absolute;
+			}
+			.shade{
+				width: 100%;
+				height: 100vh;
+				padding: 2%;
+				background-color:rgba(0,0,0,0.6);
+				position: absolute;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
+			
+			.shade article{
+				width: 100%;
+				height: 100%;
+				border: 1px solid rgb(116,218,159);
+				border: 1px solid white;
+			}
+			.slide{
+				width: 100%;
+				height: 100%;
+				background-image: url(src/deco-2.jpg);
+			}
+			/*-- dead line tomorrow - small clickable arrow to go up ---*/
+			@media all and (max-width:480px){
+				.wrapper{
+					display: block;
+				}
+				.logo1{
+					width: 5em;
+					height: 4em;
+				}
+				#logo1-bottom{
+					height: 30em;
+					margin-top: 95vh;
+			     }
+				
+				.logo{display: none;
+					height: 10vh;
+					margin: -28vh 0px 0px -5vw ;
+					z-index: 1000;
+					border: 1px solid white;
+				}
+				.speech{
+					width: 100%;
+					height: 6em;
+					margin-top: 6em;
+					font-size: 90%;
+					padding-bottom: 7em;
+				}
+				.speech h1{
+					font-size: 400%;
+					margin-bottom: 2%;
+			     }
+				.speech p{
+					font-size: 70%;
+				}
+				.speech #ins{
+					display: none;
+				}
+				
+				.options{
+					width: 100%;
+					height: 60%;
+					margin-top: 1em;
+					padding-top: 10%;
+					text-align: center;
+					float: none;
+					font-size: 120%;
+					line-height: 300%;
+				}
+				.fa-minus{
+					display: none;
+				}
+				.img-container{
+					overflow: hidden;
+				}
+				
+			}

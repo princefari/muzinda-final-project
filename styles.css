@@ -1,0 +1,147 @@
+a{
+  text-decoration: none;
+
+}
+a{
+  color:orange;
+
+}
+header{
+  background: teal;
+}
+header{
+  float: left;
+  margin: 0 0 30px 0;
+  padding: 5px 0 0 0;
+  width: 100%;
+}
+h1{
+  font-size: 16px;
+  font-family: sans-serif;
+  color:orange;
+  font-weight: bolder;
+}
+nav{
+  background: teal;
+  overflow: hidden;
+
+}
+
+nav ul{
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+nav li{
+  direction: inline block;
+
+}
+nav a,nav a:visited{
+  color: white;
+
+}
+nav a{
+  float: right;
+  font-size: 16px;
+  text-align: center;
+  padding: 26px 16px;
+  font-weight: 800px;
+}
+nav a.selected,nav a:hover{
+  color: orange;
+}
+body{
+
+  font-family: sans-serif;
+  background-color: teal;
+}
+
+
+h2{
+  float: center;
+  color: white;
+  font-size: 2.0em;
+  font-weight: lighter;
+  text-align: center;
+  padding: 100px 100px;
+  width: 100%;
+}
+img{
+  max-width: 100%;
+}
+#logo{
+  text-align: left;
+  margin: 0;
+}
+  h1{
+    font-family: sans-serif;
+    margin:15px 0;
+    font-size: 1.7em;
+    font-weight: normal;
+    line-height: 0.8em;
+  }
+}
+#wrapper{
+  max-width: 940px;
+  padding: 0 5%;
+  margin: 0 auto;
+}
+#hotels{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#hotels li{
+  float: left;
+  width: 15%;
+  margin: 2.5%;
+  color: white;
+background: orange;
+}
+#hotels li a p{
+  margin: 0;
+  padding: 5%;
+  font-size: 0.7em
+  color:orange;
+}
+
+
+.footerFollow {
+float: left;
+margin-right: 10px;
+}
+
+.facebook, .twitter, .linkedin {
+float: left;
+margin-left: 5px;
+background-repeat: no-repeat;
+width: 30px;
+height: 30px;
+}
+
+.footer {
+  background-color: orange;
+  padding: 10px;
+  margin-top: 15px;
+  clear: both;
+}
+
+.flexiContainer {
+display: flex;
+padding-bottom: 10px;
+}
+
+.footerAddress, .footerNav, .socialIcons {
+background-color: #f1f1f1;
+font-size: 16px;
+margin: 10px;
+padding: 20px;
+width: 33.3333%;
+}
+
+.footerText {
+border-top: 1px solid green;
+font-size: 12px;
+text-align: center;
+
+}

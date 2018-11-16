@@ -1,0 +1,256 @@
+<?php include '/php/dbh.inc.enc.php';?>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta @charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>rwendo.co.zw Find your favourite places and art in Zimbabwe</title>
+    <meta name="description" content="rwendo.com, hotels, lodges, residential houses deals in Zimbabwe. hotel booking without fees.">
+    <meta name="keywords" content="ebooking hotels, hotel, hotels, lodge, lodges, house, residential houses, charlet, charlets, booking, bookings, ebooking, e-booking">
+    <meta name="rwendostudios" content="">
+    <link rel="stylesheet" href="css/rwendo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+
+  <body>
+
+    <header class="navbar">
+      <div href="img/rwendo.pdf" id="rwendoLogo">
+        <img src="img/RwendoLogo2.png">
+        <h1>rwendo.com</h1>
+      </div>
+
+        <div class="">
+          <?php include "signup.inc.enc";?>
+          <div class="signUp" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</div>
+
+          <div id="id01" class="modal">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <form class="modal-content" action="/php/signin.inc.enc.php">
+              <div class="container">
+                <h1>Sign Up</h1>
+                <p>Please fill in this form to create an account.</p>
+                <hr>
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+
+                <label for="psw-repeat"><b>Repeat Password</b></label>
+                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+                <label>
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                </label>
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                  <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                  <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
+                <div class="container signin">
+                  <p>Already have an account?</p>
+                  <div class="" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Signin</div>
+                  <div id="id02" class="modal">
+                    <h2>Signin Form</h2>
+                    <form class="modal-content animate" action="/php/login.inc.enc.php">
+                      <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" name="uname" required>
+
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+
+                        <button type="submit">Login</button>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                      </div>
+
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <?php include '/php/logout.inc.enc.php';?>
+            </form>
+          </div>
+
+        </div>
+
+        <a href="#home">USD</a>
+        <a href="curio.html">Curio Shops</a>
+
+      <div class="dropdown">
+        <button class="dropbtn">Cities/Towns
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Bulawayo</a>
+          <a href="#">Chimanimani</a>
+          <a href="#">Harare</a>
+          <a href="#">Hwange</a>
+          <a href="#">Inyanga</a>
+          <a href="#">Kariba</a>
+          <a href="#">Mana Pools</a>
+          <a href="#">Masvingo</a>
+          <a href="index.html">Victoria Falls</a>
+        </div>
+      </div>
+    </header>
+
+
+  <main>
+
+    <div class="slideshow-container">
+
+      <div class="mySlides fade">
+      <div class="numbertext">1 / 5</div>
+      <img src="img/great zimbabwe02.jpg" style="width:100%">
+      <div class="text">Great Zimbabwe</div>
+    </div>
+
+      <div class="mySlides fade">
+      <div class="numbertext">2 / 5</div>
+      <img src="img/hwange04.jpg" style="width:100%">
+      <div class="text">Hwange National Park</div>
+    </div>
+
+      <div class="mySlides fade">
+      <div class="numbertext">3 / 5</div>
+      <img src="img/Lake Kariba14.jpg" style="width:100%">
+      <div class="text">Kariba</div>
+    </div>
+
+      <div class="mySlides fade">
+      <div class="numbertext">4 / 5</div>
+      <img src="img/Victoria.Falls_03.jpg" style="width:100%">
+      <div class="text">Victoria Falls</div>
+    </div>
+
+      <div class="mySlides fade">
+      <div class="numbertext">5 / 5</div>
+      <img src="img/Eastern-Highlands.jpg" style="width:100%">
+      <div class="text">Inyanga Mountains</div>
+    </div>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <div class="searchBox">
+        <p>Find the destination in Zimbabwe's hotels, lodges, apartments, hotels, food courts, curio shops</p>
+        <form>
+          <input type="text" name="search" placeholder="Search...destination and zimbabwean art">
+        </form>
+        <p>Have a wonderful stay in this Southern African savanna climatic conditions</p>
+      </div>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+
+  </main>
+
+  <footer class="footer">
+    <div class="flexiContainer">
+      <address class="footerAddress">
+      <strong>Rwendo</strong> <br>
+      782-7th Avenue, Parktown,
+      Harare,
+      Zimbabwe.<br>
+      Phone: +263-4-661570 <br>
+      Email: <a href="mailto:rwendo@gmail.com">rwendo@gmail.com</a><br>
+      </address>
+      <div class="footerNav">
+        <div class="footerNavText">
+          The Company
+        </div>
+        <a class="footerAboutus" href="https://www.rwendo.com/AboutUs">AboutUS</a><br>
+        <a class="footerLegal"href="https://www.rwendo.com/Legal">Legal</a><br>
+        <a class="footerFaq"href="https://www.rwendo.com/FAQ">FAQ</a><br>
+<!--Newsletter under construction
+      <a class="footerNewsletter" onclick="openForm()">Newsletter
+
+        <div class="form-popup" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <button type="submit" class="btn">Login</button>
+            <div class="btn cancel" onclick="closeForm()"></div>
+
+          </form>
+        </div>
+
+      </a><br>
+  -->
+    </div>
+      <div class="socialIcons">
+    <div class="footerFollow">Follow us on</div>
+    <a href="https://www.facebook.com/farai.chinhengo?ref=bookmarks" class="facebook"><span><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><defs><style>.cls-1{fill:#4267b2;}.cls-2{fill:#fff;}</style></defs><title>flogo_RGB_HEX-512</title><path class="cls-1" d="M483.74,0H28.26A28.26,28.26,0,0,0,0,28.26V483.74A28.26,28.26,0,0,0,28.26,512H273.5V314H207V236.5h66.5v-57c0-66.13,40.39-102.14,99.38-102.14,28.25,0,52.54,2.1,59.62,3v69.11l-40.68,0c-32.1,0-38.32,15.25-38.32,37.64V236.5h76.74l-10,77.5H353.5V512H483.74A28.26,28.26,0,0,0,512,483.74V28.26A28.26,28.26,0,0,0,483.74,0Z"/><path id="f" class="cls-2" d="M353.5,512V314h66.75l10-77.5H353.5V187.14c0-22.39,6.22-37.64,38.32-37.64l40.68,0V80.37c-7.08-.94-31.37-3-59.62-3-59,0-99.38,36-99.38,102.14v57H207V314h66.5V512Z"/><span></svg></a>
+    <a href="https://twitter.com/farichinhengo" class="twitter"><img src="social icons/twitter icon.png" alt="Twitter icon" style="width: 30px; height:30px;"></a>
+    <a href="https://www.linkedin.com/in/farai-chinhengo-1417a930/" class="linkedin"><img src="social icons/linkedIn icon.png" alt="LinkedIn icon" style="width: 30px; height:30px;"></a>
+  </div>
+    </div>
+    <div class="footerText">
+      <p>Rwendo is a project by Rwendo Studios</p>
+      <p>&copy;2018 Rwendo Company | All rights reserved</p>
+    </div>
+
+  </footer>
+
+  <script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+  }
+  </script>
+
+    <!--<script type="text/javascript" src="..\js\mainslides.js"></script>-->
+  <script type="text/javascript" src="..\js\mydropdown.js"></script>
+  <script type="text/javascript" src="..\js\login.js"></script>
+  <script type="text/javascript" src="..\js\signup.js"></script>
+
+  </body>
+</html>
